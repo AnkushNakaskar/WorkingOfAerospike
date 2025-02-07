@@ -43,6 +43,8 @@
       Admin+>
       ```
     - **Range queries  and queries on secondary index** : Once its indexing is done, you can invoke below cmd
+    - So the start and end is for the secondary index and is for the bin’s, not for primary index.
+    - Read more : https://aerospike.com/docs/server/architecture/secondary-index.html
      ```
       aql> select * from test.users1 where age between 20 and 30
       +----+-----+--------+
